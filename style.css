@@ -1,4 +1,3 @@
-/* Estilos */
 
 * {
   margin: 0;
@@ -18,14 +17,13 @@ line-height: 1.6;
 header {
 background-color: #111;
 padding: 15px 40px;
-h2: center;
 }
 
 .navbar {
 display: flex;
 justify-content: space-between;
 align-items: center;
-h2: center;
+
 }
 
 .navbar h2 {
