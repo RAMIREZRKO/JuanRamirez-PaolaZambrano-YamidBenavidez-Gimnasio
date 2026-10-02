@@ -1,0 +1,197 @@
+/* Estilos */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f2f2f2;
+color: #222;
+line-height: 1.6;
+}
+
+/* Encabezado  */
+
+header {
+background-color: #111;
+padding: 15px 40px;
+h2: center;
+}
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+h2: center;
+}
+
+.navbar h2 {
+color: #ff4d00;
+font-size: 28px;
+}
+
+.navbar ul {
+display: flex;
+list-style: none;
+gap: 30px;
+}
+
+.navbar a {
+color: white;
+text-decoration: none;
+font-size: 17px;
+transition: 0.3s;
+}
+
+/* Efecto hover */
+.navbar a:hover {
+color: #ff4d00;
+}
+
+/* Portada */
+
+.portada {
+background-color: #222;
+color: white;
+text-align: center;
+padding: 100px 20px;
+}
+
+.portada h1 {
+font-size: 42px;
+margin-bottom: 20px;
+}
+
+.portada p {
+font-size: 19px;
+max-width: 700px;
+margin: 0 auto 30px;
+}
+
+.boton {
+display: inline-block;
+background-color: #ff4d00;
+color: white;
+text-decoration: none;
+padding: 12px 25px;
+border-radius: 5px;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.boton:hover {
+background-color: #e63e00;
+transform: scale(1.05);
+}
+
+/* Servicios */
+
+.servicios {
+padding: 60px 40px;
+text-align: center;
+}
+
+.servicios h2 {
+font-size: 32px;
+margin-bottom: 40px;
+}
+
+/* tarjetas grid  */
+
+.contenedor-tarjetas {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+max-width: 1100px;
+margin: 0 auto;
+}
+
+.tarjeta {
+background-color: white;
+padding: 30px 20px;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+transition: 0.3s;
+}
+
+.tarjeta h3 {
+color: #ff4d00;
+margin-bottom: 15px;
+font-size: 22px;
+}
+
+.tarjeta p {
+color: #555;
+}
+
+/* Efecto al pasar el mouse */
+.tarjeta:hover {
+transform: translateY(-8px);
+box-shadow: 0 8px 18px rgba(0, 0, 0, 0.20);
+}
+
+/* footer */
+
+footer {
+background-color: #111;
+color: white;
+padding: 25px;
+text-align: center;
+}
+
+footer p {
+margin: 0;
+}
+
+/* Diseño */
+
+@media (max-width: 768px) {
+
+
+header {
+    padding: 15px 20px;
+}
+
+.navbar {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.navbar ul {
+    gap: 15px;
+}
+
+.portada {
+    padding: 70px 20px;
+}
+
+.portada h1 {
+    font-size: 32px;
+}
+
+.contenedor-tarjetas {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+}
+
+@media (max-width: 500px) {
+
+
+.contenedor-tarjetas {
+    grid-template-columns: 1fr;
+}
+
+.portada h1 {
+    font-size: 27px;
+}
+
+.navbar ul {
+    flex-direction: column;
+    text-align: center;
+}
+}
